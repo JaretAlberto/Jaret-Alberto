@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felicitaciones Anita</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            padding: 30px;
+            text-align: center;
+            animation: fadeIn 1.5s ease;
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+            color: #e91e63;
+            font-size: 48px;
+            margin-bottom: 20px;
+            animation: slideDown 1.5s ease;
+        }
+
+        p {
+            color: #555;
+            font-size: 20px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            animation: fadeIn 2s ease;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #e91e63;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: transform 0.3s ease;
+            animation: bounce 2s infinite;
+        }
+
+        .btn:hover {
+            transform: scale(1.1);
+            background-color: #d81b60;
+        }
+
+        .author {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #888;
+            animation: fadeIn 3s ease;
+        }
+
+        /* Sparkle animation */
+        .sparkle {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background-color: rgba(255, 255, 255, 0.6);
+            border-radius: 50%;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.9), 0 0 40px rgba(255, 255, 255, 0.6);
+            animation: sparkleMove 2s infinite ease-in-out alternate;
+        }
+
+        /* Keyframes for sparkle animation */
+        @keyframes sparkleMove {
+            0% {
+                transform: scale(1);
+                opacity: 0.8;
+            }
+            50% {
+                transform: scale(1.5);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 0.8;
+            }
+        }
+
+        /* Animations for the rest of the page */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 36px;
+            }
+
+            p {
+                font-size: 18px;
+            }
+
+            .btn {
+                padding: 10px 20px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <img src="https://i.pinimg.com/474x/36/84/c1/3684c198207dd94848c8d4deb8907d27--hello-kitty.jpg" alt="Hello Kitty" style="width:70%; height:auto; border-radius: 10px; margin-bottom: 20px;">
+        <h1>¡Felicidades, Anita!</h1>
+        <p>¡Que tu día esté lleno de felicidad, amor y momentos inolvidables! Eres una persona increíble y te deseo todo lo mejor.</p>
+        <a href="#" class="btn">¡Disfruta tu día!</a>
+        <div class="author">Autor: Jaret</div>
+    </div>
+
+    <div class="sparkle"></div>
+
+</body>
+</html> 
+
+
+
